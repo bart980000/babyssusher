@@ -4,25 +4,33 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Baby Shusher – uspokajacz dla niemowląt</title>
+  <title>Baby Shusher – Uspokajacz – sklep 1-produktowy</title>
   <script>
-    (function() {
-      var FB_PIXEL_ID = '1304522307987776';
-      if (!FB_PIXEL_ID) return;
-      !function(f,b,e,v,n,t,s) {
-        if (f.fbq) return; n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if (!f._fbq) f._fbq=n; n.push=n; n.loaded=!0; n.version='2.0';
-        n.queue=[]; t=b.createElement(e); t.async=!0;
-        t.src=v; s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)
-      }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', FB_PIXEL_ID);
-      fbq('track', 'PageView', { content_name: 'Baby Shusher' });
+    (function(){
+       var FB_PIXEL_ID = '1304522307987776';
+      if(!FB_PIXEL_ID || FB_PIXEL_ID==='REPLACE_FB_PIXEL_ID') return;
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src='https://connect.facebook.net/en_US/fbevents.js';s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document, 'script');
+      fbq('init', FB_PIXEL_ID); fbq(content_name: 'Baby Shusher');
+    })();
+    (function(){
+      var TIKTOK_PIXEL_ID='REPLACE_TIKTOK_PIXEL_ID';
+      if(!TIKTOK_PIXEL_ID || TIKTOK_PIXEL_ID==='REPLACE_TIKTOK_PIXEL_ID') return;
+      !function (w, d, t) {
+        w[t] = w[t] || []; var ttq = w[t]; ttq.methods = ['page','track','identify','instances','debug','on','off','once','ready','setUserProperties','setVisitorProperties','reset'];
+        ttq.setAndDefer = function(t,e) { t[e] = function() { t.push([e].concat([].slice.call(arguments,0))) } };
+        for (var e = 0; e < ttq.methods.length; e++) ttq.setAndDefer(ttq, ttq.methods[e]);
+        ttq.load = function(e) { var i = 'ttq'; ttq._i = ttq._i || {}; ttq._i[e] = []; ttq._i[e]._u = 'https://analytics.tiktok.com/i18n/pixel/events.js';
+        var a = d.createElement('script'); a.type = 'text/javascript'; a.async = true; a.src = ttq._i[e]._u; var s = d.getElementsByTagName('script')[0]; s.parentNode.insertBefore(a, s); };
+        ttq.load(TIKTOK_PIXEL_ID); ttq.page();
+      }(window, document, 'ttq');
     })();
   </script>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
 <body class="bg-neutral-50 text-neutral-900">
   <div class="w-full bg-neutral-900 text-white text-center text-sm py-2">Wysyłka 24 h • 14 dni na zwrot • Obsługa PL</div>
   <header class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-2 gap-8 items-center">
@@ -107,4 +115,3 @@
   </div>
 </body>
 </html>
-
